@@ -1,0 +1,695 @@
+<!-- finalizado -->
+ 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Portfólio | ARPlay Films
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site solid">
+
+        <div class="wrap">
+
+            <a
+                href="index.html"
+                class="logo">
+
+                <img
+                    src="img/logo.png"
+                    alt="ARPlay Films"
+                    class="logo-img">
+
+                <h1>
+                    ARPLAY <b>FILMS</b>
+                </h1>
+
+            </a>
+
+            <div class="hdr-actions">
+
+                <a
+                    href="index.html"
+                    class="btn ghost sm">
+
+                    ← Voltar ao Site
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section
+            id="portfolio"
+            class="blk">
+
+            <div class="wrap">
+
+                <div class="hero-admin">
+
+                    <span class="eyebrow">
+                        PORTFÓLIO
+                    </span>
+
+                    <h2>
+                        NOSSAS COBERTURAS
+                    </h2>
+
+                    <p>
+                        Cada evento possui sua própria
+                        história. Conheça alguns dos
+                        estilos de cobertura realizados
+                        pela ARPlay Films.
+                    </p>
+
+                </div>
+
+                <!-- FILTROS -->
+
+<div class="portfolio-filtros">
+
+    <button
+        class="filtro ativo"
+        data-filtro="todos">
+        Todos
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="casamento">
+        💍 Casamentos
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="corporativo">
+        🏢 Corporativos
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="ensaio">
+        📸 Ensaios
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="formatura">
+        🎓 Formaturas
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="quinze">
+        👑 15 Anos
+    </button>
+
+</div>
+
+<!-- LEGENDA -->
+
+<div
+    id="legendaCategoria"
+    class="portfolio-legenda">
+
+    Exibindo todos os registros da ARPlay Films.
+
+</div>
+
+<!-- FILTRO FOTO / VÍDEO -->
+
+<div
+    id="filtrosTipo"
+    class="filtros-tipo"
+    style="display:none;">
+
+    <button
+        type="button"
+        onclick="filtrarTipo('foto')">
+
+        📸 Fotos
+
+    </button>
+
+    <button
+        type="button"
+        onclick="filtrarTipo('video')">
+
+        🎬 Vídeos
+
+    </button>
+
+</div>
+
+<!-- MENSAGEM DE CATEGORIA VAZIA -->
+
+<div
+    id="portfolioVazio"
+    class="portfolio-vazio hidden">
+
+    <h3>
+        Em breve
+    </h3>
+
+    <p>
+        Ainda não existem registros
+        disponíveis nesta categoria.
+        Novos trabalhos serão adicionados
+        em breve.
+    </p>
+
+</div>
+
+<!-- GALERIA -->
+        
+
+                <div class="portfolio-grid">
+
+                    <!-- CASAMENTOS -->
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="casamento"
+                        data-tipo="foto"
+                        src="img/portifolio/c1.jpeg"
+                        alt="Casamento">
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="casamento"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/c1.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <!-- CORPORATIVOS -->
+                    <video
+                        class="portfolio-item"
+                        data-categoria="corporativo"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/e1.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <!-- ENSAIOS -->
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef1.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef2.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef3.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef4.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef5.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef6.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                     <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef7.jpeg"
+                        alt="Ensaio Fotográfico">  
+                        
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef8.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef9.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef10.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef11.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef12.jpeg"
+                        alt="Ensaio Fotográfico">
+                        
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef13.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef14.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                         <img
+                        class="portfolio-item"
+                        data-categoria="ensaio"
+                        data-tipo="foto"
+                        src="img/portifolio/ef15.jpeg"
+                        alt="Ensaio Fotográfico">
+
+                    <!-- FORMATURAS -->
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f1.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f2.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f3.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f4.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f5.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f6.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f7.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f8.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f9.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f10.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f11.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f12.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f13.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f14.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f15.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f16.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f17.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f18.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f19.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f20.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f21.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f22.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f23.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f24.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f25.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f26.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f27.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f28.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f29.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f30.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f31.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f32.jpeg"
+                        alt="Formatura">
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f33.jpeg"
+                        alt="Formatura">
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f2.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f3.jpeg"
+                        alt="Formatura">
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f3.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <img
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="foto"
+                        src="img/portifolio/f4.jpeg"
+                        alt="Formatura">
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f5.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f6.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f7.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f8.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f9.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <video
+                        class="portfolio-item"
+                        data-categoria="formatura"
+                        data-tipo="video"
+                        controls
+                        preload="metadata">
+
+                        <source
+                            src="img/portifolio/f10.mp4"
+                            type="video/mp4">
+
+                    </video>
+   
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/portfolio.js"></script>
+
+</body>
+
+</html>

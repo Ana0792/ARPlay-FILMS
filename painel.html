@@ -1,0 +1,709 @@
+<!-- finalizado -->
+ 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Painel ARPlay Films
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+
+    <header class="site solid">
+
+        <div class="wrap">
+
+            <a
+                href="index.html"
+                class="logo">
+
+                <img
+                    src="img/logo.png"
+                    alt="ARPlay Films"
+                    class="logo-img">
+
+                <h1>
+
+                    ARPLAY <b>FILMS</b>
+
+                </h1>
+
+            </a>
+
+            <div class="hdr-actions">
+
+                <a
+                    href="index.html"
+                    class="btn ghost sm">
+
+                    ← Ver Site
+
+                </a>
+                <button
+                    id="logoutBtn"
+                    class="btn ghost sm">
+                       Sair
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section
+            id="painel"
+            class="blk">
+
+            <div class="wrap">
+
+                <!-- HERO -->
+
+                <div class="hero-admin">
+
+                    <span class="eyebrow">
+
+                        Gestão Interna
+
+                    </span>
+
+                    <h2>
+
+                        CENTRAL ADMINISTRATIVA
+
+                    </h2>
+
+                    <p>
+
+                        Gerencie orçamentos,
+                        clientes e gravações da
+                        ARPlay Films.
+
+                    </p>
+
+                </div>
+
+                <!-- PRÓXIMO EVENTO -->
+
+                <div class="chart-card">
+
+                    <header>
+
+                        <h3>
+
+                            Próximo Evento
+
+                        </h3>
+
+                    </header>
+
+                    <div class="grid">
+
+                        <div>
+
+                            <div
+                                id="proximoCodigo"
+                                class="evento-codigo">
+
+                                ARP-XXXX
+
+                            </div>
+
+                            <h2
+                                id="proximoEvento">
+
+                                Nenhum evento encontrado
+
+                            </h2>
+
+                        </div>
+
+                        <div class="evento-info">
+
+                            <p>
+
+                                <strong>
+                                    📅 Data:
+                                </strong>
+
+                                <span
+                                    id="proximaData">
+
+                                    --
+
+                                </span>
+
+                            </p>
+
+                            <p>
+
+                                <strong>
+                                    🕒 Hora:
+                                </strong>
+
+                                <span
+                                    id="proximaHora">
+
+                                    --
+
+                                </span>
+
+                            </p>
+
+                            <p>
+
+                                <strong>
+                                    📍 Local:
+                                </strong>
+
+                                <span
+                                    id="proximoLocal">
+
+                                    --
+
+                                </span>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ÚLTIMAS ALTERAÇÕES -->
+
+                <div class="chart-card">
+
+                    <header>
+
+                        <h3>
+
+                            Últimas Alterações
+
+                        </h3>
+
+                    </header>
+
+                    <div
+                        id="ultimasAlteracoes">
+
+                        <p>
+
+                            Nenhuma alteração registrada.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- KPI -->
+
+                <div class="dash">
+
+                    <div
+                        class="kpi hl filtro-kpi"
+                        id="filtroTodos">
+
+                        <span class="k">
+
+                            Orçamentos
+
+                        </span>
+
+                        <b
+                            id="totalOrcamentos">
+
+                            0
+
+                        </b>
+
+                        <span class="s">
+
+                            recebidos
+
+                        </span>
+
+                    </div>
+
+                    <div
+                        class="kpi pendente filtro-kpi"
+                        id="filtroPendentes">
+
+                        <span class="k">
+
+                            Pendentes
+
+                        </span>
+
+                        <b
+                            id="totalPendentes">
+
+                            0
+
+                        </b>
+
+                        <span class="s">
+
+                            aguardando análise
+
+                        </span>
+
+                    </div>
+
+                    <div
+                        class="kpi analise filtro-kpi"
+                        id="filtroAnalise">
+
+                        <span class="k">
+
+                            Em análise
+
+                        </span>
+
+                        <b
+                            id="totalAnalise">
+
+                            0
+
+                        </b>
+
+                        <span class="s">
+
+                            em atendimento
+
+                        </span>
+
+                    </div>
+
+                    <div
+                        class="kpi confirmado filtro-kpi"
+                        id="filtroConfirmados">
+
+                        <span class="k">
+
+                            Confirmados
+
+                        </span>
+
+                        <b
+                            id="totalConfirmados">
+
+                            0
+
+                        </b>
+
+                        <span class="s">
+
+                            aprovados
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- CONTROLE -->
+
+                <div class="chart-card">
+
+                    <header>
+
+                        <h3>
+
+                            Controle de Orçamentos
+
+                        </h3>
+
+                        <button
+                            id="novoOrcamento"
+                            class="btn sm">
+
+                            Novo Orçamento
+
+                        </button>
+
+                    </header>
+
+                    <p class="hint">
+
+                        Orçamentos enviados pelo site
+                        e registros criados pela equipe.
+
+                    </p>
+
+                </div>
+
+                <!-- FERRAMENTAS -->
+<div class="panel-tools">
+
+    <div class="search">
+        <input
+            type="text"
+            id="busca"
+            placeholder="Buscar cliente, telefone, código ou evento">
+    </div>
+
+</div>
+
+<!-- FILTRO ATIVO -->
+<div
+    id="filtroAtivo"
+    class="ticket-filtro hidden">
+
+    <div class="ticket-filtro-left">
+
+        <span class="ticket-tag">
+            FILTRO ATIVO
+        </span>
+
+        <strong id="nomeFiltroAtivo">
+            Todos os Orçamentos
+        </strong>
+
+    </div>
+
+    <button
+        id="limparFiltro"
+        class="ticket-close"
+        title="Limpar filtro">
+
+        ✕
+
+    </button>
+
+</div>
+
+<!-- CONTADOR -->
+<div class="resultado-info">
+
+    <span id="contadorResultados">
+
+        Mostrando 0 resultados
+
+    </span>
+
+</div>
+                <!-- TABELA -->
+
+                <div class="table-wrap">
+
+                    <table class="list">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Código
+                                </th>
+
+                                <th>
+                                    Cliente
+                                </th>
+
+                                <th>
+                                    Telefone
+                                </th>
+
+                                <th>
+                                    Evento
+                                </th>
+
+                                <th>
+                                    Data
+                                </th>
+
+                                <th>
+                                    Funcionário
+                                </th>
+
+                                <th>
+                                    Valor Est.
+                                </th>
+
+                                <th>
+                                    Valor Apr.
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Observação
+                                </th>
+
+                                <th>
+                                    Ações
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="tabela">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+        <!-- MODAL NOVO ORÇAMENTO -->
+
+    <div
+        id="modalNovo"
+        hidden
+        aria-hidden="true">
+
+        <div
+            class="modal-box"
+            role="dialog"
+            aria-modal="true">
+
+            <h3>
+
+                Novo Orçamento
+
+            </h3>
+
+            <form id="formNovo">
+
+                <div class="form-grid">
+
+                    <div class="field">
+
+                        <label for="novoNome">
+                            Nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="novoNome"
+                            autocomplete="name"
+                            placeholder="Ana Carolina"
+                            required>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="novotelefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="novoTelefone"
+                            autocomplete="tel"
+                            placeholder="(41) 99999-9999"
+                            required>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="novoEmail">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="novoEmail"
+                            autocomplete="email"
+                            placeholder="cliente@gmail.com">
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>
+                            Funcionário Responsável
+                        </label>
+
+                        <input
+                            type="text"
+                            id="novoFuncionario"
+                            placeholder="Responsável pelo atendimento">
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>
+                            Valor Estimado
+                        </label>
+
+                        <input
+                            type="number"
+                            id="novoValorEstimado"
+                            min="0"
+                            step="0.01"
+                            placeholder="0,00">
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>
+                            Valor Aprovado
+                        </label>
+
+                        <input
+                            type="number"
+                            id="novoValorAprovado"
+                            min="0"
+                            step="0.01"
+                            placeholder="0,00">
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>
+                            Tipo de Evento
+                        </label>
+
+                        <input
+                            type="text"
+                            id="novoEvento"
+                            placeholder="Casamento, formatura, aniversário..."
+                            required>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>
+                            Data
+                        </label>
+
+                        <input
+                            type="date"
+                            id="novoData"
+                            required>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label>
+                            Hora
+                        </label>
+
+                        <input
+                            type="time"
+                            id="novoHora"
+                            required>
+
+                    </div>
+
+                    <div class="field full">
+
+                        <label>
+                            Local
+                        </label>
+
+                        <input
+                            type="text"
+                            id="novoLocal"
+                            placeholder="Local do evento"
+                            required>
+
+                    </div>
+
+                    <div class="field full">
+
+                        <label>
+                            Serviços
+                        </label>
+
+                        <input
+                            type="text"
+                            id="novoServicos"
+                            placeholder="Filmagem, drone, making of...">
+
+                    </div>
+
+                    <div class="field full">
+
+                        <label>
+                            Descrição
+                        </label>
+
+                        <textarea
+                            id="novoDescricao"
+                            rows="4"
+                            placeholder="Informações adicionais sobre o evento"></textarea>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-actions">
+
+                    <button
+                        type="submit"
+                        class="btn">
+
+                        Salvar
+
+                    </button>
+
+                    <button
+                        type="button"
+                        id="fecharNovo"
+                        class="btn ghost">
+
+                        Cancelar
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/painel.js"></script>
+
+</body>
+</html>

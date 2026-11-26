@@ -1,0 +1,470 @@
+<!-- finalizado -->
+ 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Orçamento | ARPlay Films
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ACESSIBILIDADE -->
+     <button
+    id="acessibilidade-btn"
+    aria-label="Abrir menu de acessibilidade">
+    ♿
+ </button>
+
+    <div
+        id="acessibilidade-painel"
+        class="acessibilidade-painel">
+
+        <button id="fonte-maior">
+            A+
+        </button>
+
+        <button id="fonte-menor">
+            A-
+        </button>
+
+        <button id="alto-contraste">
+            Contraste
+        </button>
+
+        <button id="escala-cinza">
+            Cinza
+        </button>
+
+        <button id="destacar-links">
+            Links
+        </button>
+
+        <button id="resetar">
+            Resetar
+        </button>
+
+        <div class="font-bar">
+
+            <div class="font-track">
+
+                <div
+                    id="font-level"
+                    class="font-level">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="site solid">
+
+        <div class="wrap">
+
+            <a
+                href="painel.html"
+                class="logo">
+
+                <h1>
+
+                    ARPLAY <b>FILMS</b>
+
+                </h1>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="blk">
+
+            <div class="wrap">
+
+                <!-- TOPO -->
+
+                <div class="chart-card">
+
+                    <h2 id="tituloCodigo">
+
+                        Carregando...
+
+                    </h2>
+
+                    <p>
+
+                        Código do orçamento e
+                        informações completas
+                        do evento.
+
+                    </p>
+
+                </div>
+
+                <!-- CLIENTE -->
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Dados do Cliente
+
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="field">
+
+                            <label for="nome">
+                                Nome *
+                            </label>
+                            
+                            <input 
+                            id="nome" type="text">
+
+                        </div>
+
+                        <div class="field">
+
+                            <label for="telefone"> 
+                                Telefone *
+                            </label>
+
+                            <input
+                                id="telefone"type="tel" >
+
+                        </div>
+
+                        <div class="field full">
+
+                            <label for="email">
+                                E-mail
+                            </label>
+
+                            <input
+                                id="email" type="email">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- EVENTO -->
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Dados do Evento
+
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="field">
+
+                            <label>
+                                Tipo de Evento
+                            </label>
+
+                            <input
+                                id="tipoEvento" type="text">
+
+                        </div>
+
+                        <div class="field">
+
+                            <label>
+                                Data
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dataEvento">
+
+                        </div>
+
+                        <div class="field">
+
+                            <label>
+                                Hora
+                            </label>
+
+                            <input
+                                type="time"
+                                id="horaEvento">
+
+                        </div>
+
+                        <div class="field">
+
+                            <label>
+                                Local
+                            </label>
+
+                            <input
+                                id="localEvento">
+
+                        </div>
+
+                        <div class="field full">
+
+                            <label>
+                                Serviços
+                            </label>
+
+                            <input
+                                id="servicos">
+
+                        </div>
+
+                        <div class="field full">
+
+                            <label>
+                                Descrição
+                            </label>
+
+                            <textarea
+                                id="descricao"></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- GESTÃO INTERNA -->
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Gestão Interna
+
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="field">
+
+                            <label>
+                                Funcionário
+                            </label>
+
+                            <input
+                                id="funcionario">
+
+                        </div>
+
+                        <div class="field">
+
+                            <label>
+                                Status
+                            </label>
+
+                            <select
+                                id="status">
+
+                                <option>
+                                    Pendente
+                                </option>
+
+                                <option>
+                                    Em análise
+                                </option>
+
+                                <option>
+                                    Confirmado
+                                </option>
+
+                                <option>
+                                    Cancelado
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="field">
+
+                            <label>
+                                Valor Estimado
+                            </label>
+
+                            <input
+                                type="number"
+                                min="0"
+                                step="0.01"
+                                id="valorEstimado">
+
+                        </div>
+
+                        <div class="field">
+
+                            <label>
+                                Valor Aprovado
+                            </label>
+
+                            <input
+                                type="number"
+                                min="0"
+                                step="0.01"
+                                id="valorAprovado">
+
+                        </div>
+
+                        <div class="field full">
+
+                            <label>
+
+                                Observação Interna
+
+                            </label>
+
+                            <textarea
+                                id="observacaoInterna"></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- SISTEMA -->
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Informações do Sistema
+
+                    </h3>
+
+                    <div class="grid">
+
+                        <div>
+
+                            <strong>
+                                Código
+                            </strong>
+
+                            <p id="codigo">
+
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Criado em
+                            </strong>
+
+                            <p id="criadoEm">
+
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Última Atualização
+                            </strong>
+
+                            <p id="ultimaAtualizacao">
+
+                                Nenhuma alteração
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- HISTÓRICO -->
+
+                <div class="chart-card">
+
+                    <h3>
+
+                        Histórico de Alterações
+
+                    </h3>
+
+                    <div id="historico">
+
+                        <p>
+
+                            Nenhuma alteração registrada.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- AÇÕES -->
+
+                <div class="acoes-orcamento">
+
+                    <button
+                        class="btn"
+                        id="salvar">
+
+                        Salvar Alterações
+
+                    </button>
+
+                    <button
+                        class="btn ghost"
+                        id="excluir">
+
+                        Excluir
+
+                    </button>
+
+                    <button
+                        class="btn ghost"
+                        id="cancelar">
+
+                        Voltar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/orcamento.js"></script>
+
+</body>
+</html>
