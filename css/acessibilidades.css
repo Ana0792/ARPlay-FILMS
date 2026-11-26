@@ -1,0 +1,260 @@
+/* finalizado */
+
+.acessibilidade-painel {
+
+    position: fixed;
+
+    top: 90px;
+    right: 20px;
+
+    width: 320px;
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    background: #081425;
+
+    border:
+    1px solid
+    rgba(0,183,255,.25);
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 20px 40px
+    rgba(0,0,0,.4);
+
+    z-index: 9999;
+
+}
+
+.acessibilidade-painel.ativo {
+
+    display: flex;
+
+}
+
+.acessibilidade-painel h3 {
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 1rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+.a11y-grupo {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.a11y-grupo span {
+
+    color:
+    rgba(
+        255,
+        255,
+        255,
+        .7
+    );
+
+    font-size: .9rem;
+
+}
+
+.font-controls {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.font-btn {
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #10294b;
+
+    color: #fff;
+
+    font-size: 1.4rem;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+.font-btn:hover {
+
+    background: #00b7ff;
+
+    color: #001421;
+
+}
+
+.font-bar {
+
+    flex: 1;
+
+    height: 6px;
+
+    overflow: hidden;
+
+    background:
+    rgba(
+        255,
+        255,
+        255,
+        .15
+    );
+
+    border-radius: 999px;
+
+}
+
+.font-level {
+
+    width: 50%;
+    height: 100%;
+
+    background: #00b7ff;
+
+    border-radius: 999px;
+
+    transition: .3s ease;
+
+}
+
+.a11y-item {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #10294b;
+
+    color: #fff;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+.a11y-item:hover {
+
+    background: #00b7ff;
+
+    color: #001421;
+
+}
+
+.a11y-item.ativo {
+
+    background: #00b7ff;
+
+    color: #001421;
+
+}
+
+.alto-contraste {
+
+    filter: contrast(180%);
+
+}
+
+.escala-cinza {
+
+    filter: grayscale(100%);
+
+}
+
+.destacar-links a {
+
+    color: #ffff00 !important;
+
+    text-decoration:
+    underline !important;
+
+    font-weight: 700 !important;
+
+}
+
+@media (max-width:768px){
+
+    .acessibilidade-painel{
+
+        top: 80px;
+
+        right: 10px;
+
+        width:
+        calc(100% - 20px);
+
+        max-width: 320px;
+
+    }
+
+}
+#acessibilidade-btn,
+.acessibilidade-btn{
+
+    position:fixed !important;
+
+    right:20px;
+    bottom:20px;
+
+    width:60px;
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#0a84ff;
+
+    color:#fff;
+
+    font-size:1.6rem;
+
+    cursor:pointer;
+
+    z-index:99999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.35);
+}

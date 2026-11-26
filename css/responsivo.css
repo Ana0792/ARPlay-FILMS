@@ -1,0 +1,48 @@
+/* finalizado */
+
+/*TABLET*/
+
+@media (max-width:960px){
+
+    .wrap{
+
+        padding-inline:20px;
+
+    }
+
+}
+
+/*TABLET PEQUENO*/
+
+@media (max-width:768px){
+
+    h2{
+
+        font-size:
+        clamp(
+            2rem,
+            10vw,
+            3.5rem
+        );
+
+    }
+
+    section.blk{
+
+        padding-block:3rem;
+
+    }
+
+}
+
+/*MOBILE*/
+
+@media (max-width:560px){
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}

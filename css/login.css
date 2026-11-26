@@ -1,0 +1,237 @@
+/* finalizado */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:2rem;
+
+    background:
+    linear-gradient(
+        135deg,
+        #06111f,
+        #0b2140
+    );
+
+}
+
+/*  CONTAINER */
+
+.login-box{
+
+    width:min(100%,1000px);
+
+    display:grid;
+
+    grid-template-columns:
+    1fr
+    420px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    border:1px solid var(--line);
+
+    background:var(--surface);
+
+    box-shadow:
+    0 25px 60px rgba(
+        0,
+        0,
+        0,
+        .35
+    );
+
+}
+
+/* LADO ESQUERDO */
+
+.login-brand{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:3rem;
+
+    background:
+    linear-gradient(
+        135deg,
+        #091a2e,
+        #102541
+    );
+
+}
+
+.login-logo{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid var(--accent);
+
+    margin-bottom:1.5rem;
+
+}
+
+.login-brand h1{
+
+    margin:0;
+
+    color:var(--fg);
+
+    font-family:var(--display);
+
+    font-size:3rem;
+
+    font-weight:900;
+
+    line-height:1;
+
+}
+
+.login-brand b{
+
+    color:var(--accent);
+
+}
+
+.login-brand p{
+
+    margin-top:1rem;
+
+    color:var(--muted);
+
+    font-size:1.05rem;
+
+    line-height:1.6;
+
+}
+
+/* FORM */
+
+.login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    padding:3rem;
+
+}
+
+.login-form h2{
+
+    margin-bottom:1rem;
+
+    color:var(--fg);
+
+    font-family:var(--display);
+
+    font-size:2rem;
+
+}
+
+.login-form label{
+
+    font-weight:700;
+
+    color:var(--fg);
+
+}
+
+.login-form input{
+
+    height:54px;
+
+    padding:0 1rem;
+
+    border-radius:14px;
+
+    border:1px solid var(--line);
+
+    background:#06111f;
+
+    color:#fff;
+
+}
+
+.login-form input:focus{
+
+    border-color:var(--accent);
+
+    outline:none;
+
+}
+
+.login-form .btn{
+
+    margin-top:.5rem;
+
+    width:100%;
+
+}
+
+.voltar{
+
+    margin-top:.5rem;
+
+    text-align:center;
+
+    color:var(--muted);
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.voltar:hover{
+
+    color:var(--accent);
+
+}
+
+/*  MOBILE */
+
+@media (max-width:900px){
+
+    .login-box{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .login-brand{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .login-brand h1{
+
+        font-size:2.3rem;
+
+    }
+
+}

@@ -1,0 +1,84 @@
+/* finalizado */
+
+.marquee{
+
+    overflow:hidden;
+
+    background:var(--accent);
+
+    color:var(--accent-ink);
+
+    border-block:
+    1px solid var(--accent);
+
+}
+
+.marquee-track{
+
+    display:flex;
+
+    align-items:center;
+
+    width:max-content;
+
+    gap:3rem;
+
+    padding:1rem 0;
+
+    font-family:var(--display);
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
+
+    will-change:transform;
+
+    animation:
+    scroll 24s
+    linear
+    infinite;
+
+}
+
+.marquee-track span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.6rem;
+
+    flex:none;
+
+}
+
+.marquee:hover .marquee-track{
+
+    animation-play-state:paused;
+
+}
+
+@keyframes scroll{
+
+    to{
+
+        transform:
+        translateX(-50%);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .marquee-track{
+
+        gap:1.5rem;
+
+        padding:.85rem 0;
+
+    }
+
+}
